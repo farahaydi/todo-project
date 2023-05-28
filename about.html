@@ -5,71 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="https://assets.dryicons.com/uploads/icon/svg/6150/c40a9e1f-308b-48f1-b49e-14ef0e05af70.svg" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <table>
-            <tr>
-              <td> <img src="./Assest/todo.png" width="50" height="60" alt="TO-DO LIST LOGO"></td>
-              <td style="color: rgb(106, 104, 104);"> <h1>TO-DO LIST</h1></td>
-            </tr>
-          </table>
-    </header>
+        <img src="./Assest/todo.png"class="x" id="logo" alt="TO-DO LIST LOGO">
+        <h1 class="x">TO-DO LIST</h1>
+</header>
 
-    <nav>                                
-        <ul style=" position: absolute; right: 20px; top: 60px;">
-            <a href="index.html" style="color: rgb(106, 104, 104);">Home</a>
-            <a href="about.html" style="color: rgb(106, 104, 104);">About</a>
-        </ul>
-    </nav>
-    <hr>
+<nav>                                
+    <div class="header">
+        <div class="header-right">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+        </div>
+      </div>
+      
+</nav>
 
+<hr>
     <main>
+        <div id="admin">
+            <img src="./Assest/fara.jpg" alt="AdminImg" id="my">
+               <p>
+                <b>        
+                    My Name Is Farah Elaydi I'm 23 Years Old I'm Fresh Computer science Graduate.
+                </b>
+               </p>
+        </div>
+
 
         <fieldset>
-            <legend>MY DATA</legend>
+            <legend>Conatact Me</legend>
         <form>
-                <img src="./Assest/fara.jpg" alt="my pic" width="150px" height="150px">
-                <hr>
-            <div>
-                <label for="name">Name : <b>Farah Najeh Elaydi</b></label>
-            </div>
-            <br>
-            <div>
-                <label for="email">E-mail : <b>farahelaydi9@gmail.com</b> </label>
-            </div>
-            <br>
-
-            <div>
-                <label for="DESCRIPTION ">DESCRIPTION  : <b>Fresh Computer science Graduate</b> </label>
-            </div>
-            <br>
-        </form>
-        </fieldset>
-    </main>
-
-    <br> <br>
-    <main>
-
-        <fieldset>
-            <legend>USER DATA</legend>
-        <form>
-            <div>
+            <div class="form">
                 <label for="name">Name :</label>
             <input id="name" type="text" placeholder="Enter Your Name" />
             </div>
-            <div>
+            <div class="form">
+                <label for="phone">Phone No :</label>
+            <input id="phone" type="text" placeholder="Enter Your Phone Number" />
+            </div>
+            <div class="form">
                 <label for="email">E-mail :</label>
             <input id="email" type="email"placeholder="Email contain @ and ." />
             </div>
-            <div>
+            <div class="form">
                 <label for="message">Message :</label>
             <input type="text" id="message" placeholder="Enter Your Message" />
             </div>
-            <div>
-                   <input type="submit" value="LogIn"/>
+            <div class="form">
+                   <input type="submit" value="SEND" class="btn"/>
             </div>
         </form>
         </fieldset>
@@ -78,19 +66,14 @@
 
 
 
-<br> <br><br><br><br><br><br><br>
-<footer>
-    <hr>
-    
-    <span>
-        To Do gives you focus, from work to play. Get started, Learn more. Download To Do. Terms of use for To Do.
-    </span>
-    <span  style=" position: absolute; right: 20px;">
-        &copy; Created by Farah Elaydi. 2023  
-    </span>
-    <div  style=" position: absolute; right: 20px;">
-    phone no: +0962796971846
-     </div>
-</footer>
+
+    <footer>
+        <hr>
+        <p> To Do gives you focus, from work to play. Get started, Learn more. Download To Do. Terms of use for To Do.</p>
+        <div id="footerdiv">
+            <b>&copy; Created by Farah Elaydi. 2023  </b> <br>
+            <b>phone no: +0962796971846</b>
+        </div> 
+    </footer>
 </body>
 </html>
