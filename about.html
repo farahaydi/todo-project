@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <img src="./Assest/todo.png"class="x" id="logo" alt="TO-DO LIST LOGO">
+        <img src="./Assest/todo.png"class="img" id="logo" alt="TO-DO LIST LOGO">
         <h1 class="x">TO-DO LIST</h1>
 </header>
 
@@ -27,39 +27,37 @@
 
 <hr>
     <main>
-        <div id="admin">
-            <img src="./Assest/fara.jpg" alt="AdminImg" id="my">
+        <div class="admin-div">
+            <h3 class="title">Admin Info </h3>
+            <img src="./Assest/robin.jpeg" alt="AdminImg" class="personal-img">
                <p>
                 <b>        
-                    My Name Is Farah Elaydi I'm 23 Years Old I'm Fresh Computer science Graduate.
+                    My Name Is Farah Elaydi I'm 23 Years Old I'm Fresh Computer science Graduate WITH SKILLS IN PROGRAMMING
+                    LANGUAGES LIKE JAVA, C#, SQL ORACLE , AND C++, I HAVE A
+                    GOOD KNOWLEDGE OF ASP.NET MVC. MY BACKGROUND IN
+                    COMPUTER SCIENCE HAS GIVEN ME A SOLID KNOWLEDGE OF
+                    ALGORITHMS AND PROVIDED ME WITH THE SKILLS OF PROBLEMSOLVING AND ANALYTICAL THINKING, I'M PASSIONATE ABOUT
+                    LEARNING NEW SKILLS.
                 </b>
                </p>
         </div>
 
 
-        <fieldset>
-            <legend>Conatact Me</legend>
-        <form>
-            <div class="form">
-                <label for="name">Name :</label>
-            <input id="name" type="text" placeholder="Enter Your Name" />
+        <fieldset class="fieldset-class">
+            <legend class="title">Conatact Me</legend>
+            <div class="container">
+                <form>
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.." class="abt-txt">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.."class="abt-txt">
+              
+                  <label for="email">Country</label>
+                 <input type="text" id="email" placeholder="E-mail contain @ and ."class="abt-txt">
+                  <input type="submit" value="Submit">
+                </form>
             </div>
-            <div class="form">
-                <label for="phone">Phone No :</label>
-            <input id="phone" type="text" placeholder="Enter Your Phone Number" />
-            </div>
-            <div class="form">
-                <label for="email">E-mail :</label>
-            <input id="email" type="email"placeholder="Email contain @ and ." />
-            </div>
-            <div class="form">
-                <label for="message">Message :</label>
-            <input type="text" id="message" placeholder="Enter Your Message" />
-            </div>
-            <div class="form">
-                   <input type="submit" value="SEND" class="btn"/>
-            </div>
-        </form>
         </fieldset>
     </main>
 
@@ -67,13 +65,10 @@
 
 
 
-    <footer>
+    <footer class="footer">
         <hr>
         <p> To Do gives you focus, from work to play. Get started, Learn more. Download To Do. Terms of use for To Do.</p>
-        <div id="footerdiv">
-            <b>&copy; Created by Farah Elaydi. 2023  </b> <br>
-            <b>phone no: +0962796971846</b>
-        </div> 
+        <p>&copy; Created by Farah Elaydi. 2023 </p>
     </footer>
 </body>
 </html>
