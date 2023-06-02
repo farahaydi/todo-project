@@ -30,52 +30,69 @@
     <hr>
 
     <main>
-        
+        <section class="table-section">
+          <h3 class="list">Task List</h3>
 <table>
     <tr>
-      <th>List</th>
-      <th>Status</th> 
+      <th class="Status">List</th>
+      <th class="Status">Status</th> 
+      <th class="Status">Actions</th>
     </tr>
     <tr>
       <td>   
-        <input type="time"><span style="font-size: xx-large;"> | <input type="text" placeholder="Enter Your Task Here " id="text"> 
+        <input type="time"  class="time"><span style="font-size: xx-large;"> | <input type="text" placeholder="Enter Your Task Here " id="text"> 
             <input type="checkbox" id="check">
         </span>
       </td>
-      <td>Done</td>
+      <td class="Status">Done</td>
+      <td><button class="delete-btn">Delete</button> <button class="finish-btn">Finished</button></td>
     </tr>
     <tr>
         <td>   
-            <input type="time"><span style="font-size: xx-large;"> | <input type="text" placeholder="Enter Your Task Here " id="text"> 
+            <input type="time" class="time"><span style="font-size: xx-large;"> | <input type="text" placeholder="Enter Your Task Here " id="text"> 
                 <input type="checkbox" id="check">
             </span>
           </td>
-      <td>UnderProcess</td>
+      <td class="Status">In progress</td>
+      <td><button class="delete-btn">Delete</button> <button class="finish-btn">Finished</button></td>
     </tr>
     <tr>
         <td>   
-            <input type="time"><span style="font-size: xx-large;"> | <input type="text" placeholder="Enter Your Task Here " id="text"> 
+            <input type="time"  class="time"><span style="font-size: xx-large;"> | <input type="text" placeholder="Enter Your Task Here " id="text"> 
                 <input type="checkbox" id="check">
             </span>
           </td>
-      <td>Done</td>
+      <td class="Status">Done</td>
+      <td><button class="delete-btn">Delete</button> <button class="finish-btn">Finished</button></td>
     </tr>
+    <tr>
+      <td>   
+          <input type="time"  class="time"><span style="font-size: xx-large;"> | <input type="text" placeholder="Enter Your Task Here " id="text"> 
+              <input type="checkbox" id="check">
+          </span>
+        </td>
+    <td class="Status">Done</td>
+    <td><button class="delete-btn">Delete</button> <button class="finish-btn">Finished</button></td>
+  </tr>
+  <tr>
+    <td>   
+        <input type="time"  class="time"><span style="font-size: xx-large;"> | <input type="text" placeholder="Enter Your Task Here " id="text"> 
+            <input type="checkbox" id="check">
+        </span>
+      </td>
+  <td class="Status">In progress</td>
+  <td><button class="delete-btn">Delete</button> <button class="finish-btn">Finished</button></td>
+</tr>
   </table>
- <tfoot>
-        <div>
-            <br> <br>
-            <input type="submit" value=" ADD NEW TASK" class="btn">
-            </div>
-        </tfoot>
+  <button class="add-btn">+ Add New Task</button>
+        </section>
     </main>
+    <footer class="footer">
+      <hr>
+      <p> To Do gives you focus, from work to play. Get started, Learn more. Download To Do. Terms of use for To Do.</p>
+      <p>&copy; Created by Farah Elaydi. 2023 </p>
+  </footer>
 
-    <footer>
-        <hr>
-        <p> To Do gives you focus, from work to play. Get started, Learn more. Download To Do. Terms of use for To Do.</p>
-        <div id="footerdiv">
-            <b>&copy; Created by Farah Elaydi. 2023  </b> <br>
-            <b>phone no: +0962796971846</b>
-        </div> 
-    </footer>
+    <script src="./app.js"></script>
 </body>
 </html>
