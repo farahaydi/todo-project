@@ -1,34 +1,50 @@
-//As a user, I would like to answer more questions, so you should add new three (Yes/No) questions.
+let Name = window.prompt("Enter your Name");
+const gender = window.prompt("Enter your gender (female/male)");
+const age = window.prompt("enter your age");
 
-let question01 = prompt("Are You A Human ?")
-let question02 = prompt("Did You Live In Amman ?")
-let question03 = prompt("Do You Live underwater?") 
-
-//If the input was empty consider the answer to be an "invalid" string.
-
-function checkValue(question) 
-{
-    if (question!="Yes"&& question!="No") 
-    {
-     question="invalid";   
+if (gender != null) {
+    switch (gender.toLowerCase()) {
+        case 'male':
+            Name = "Mr." + Name;
+            break;
+        case 'female':
+            Name = "Ms." + Name;
+            break;
+        default:
+            break;
     }
-    return question
+}
+if (age <= 0) {
+    alert("Age can't be ZERO");
 }
 
-checkValue(question01)
-checkValue(question02)
-checkValue(question03)
+if (confirm("Would like to skip the welcoming ?") == false) {
+    alert(`Welcome To TODOlist ${Name}`)
+};
 
 
-//Consider putting all the answers into an array.
-let answerArray = []
-answerArray.push(question01)
-answerArray.push(question02)
-answerArray.push(question03)
+alert('Answer This 3 Question (Yes/No)');
 
-//Traverse the array and print the items on the console.
+const questions = ['Do you Live In Jordan?', 'Do You Sleep Early?', 'Do you Eat Apple?'];
+let answers = [];
 
-for (let index = 0; index < answerArray.length; index++) {
-    const element = answerArray[index];
-    console.log(element);
+function checkQuestion(questions) {
+    for (let index = 0; index < questions.length; index++) {
+        let answer = prompt(questions[index]);
+        if (answer === 'Yes') {
+            answers.push(answer);
+        } else if (answer === 'No') {
+            answers.push(answer);
+        } else {
+            answers.push('invalid');
+        }
+    }
+    logAnswers(answers);
 }
+
+function logAnswers(answers) {
+    for (let index = 0; index < answers.length; index++) {
+        console.log(answers[index]);
+    }
+}
+checkQuestion(questions);
